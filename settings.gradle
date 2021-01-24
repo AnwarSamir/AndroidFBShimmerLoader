@@ -1,0 +1,2 @@
+rootProject.name = "AndroidFBShimmerLoader"
+include ':app'

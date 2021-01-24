@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    app:cardCornerRadius="10dp">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_margin="4dp">
+        <TextView
+            android:id="@+id/tvPostTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Post title ..... "
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:ellipsize="end"
+
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/postImage"
+                android:layout_width="0dp"
+                android:layout_weight=".2"
+                android:layout_height="70dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/tpnlogo"
+                android:layout_marginBottom="10dp"
+
+                />
+            <TextView
+                android:id="@+id/tvPostDesc"
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_height="wrap_content"
+                android:text="Post Description will be here for using it any time ...."
+                android:maxLines="3"
+                android:layout_marginBottom="10dp"
+                android:ellipsize="end"
+                android:padding="5dp"
+                android:textSize="15sp"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.cardview.widget.CardView>
